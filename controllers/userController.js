@@ -1,4 +1,3 @@
-
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
@@ -10,11 +9,8 @@ const { error } = require('console');
 const secret_key = process.env.MY_SECRET_KEY;
 const hashedSHA256key = crypto.createHash('sha256').update(secret_key).digest('hex');
 
-
 module.exports.register = async(req, res) => {
-
-    try {
-
+    try {                                                                                                                                                
         const { email, password, isAdmin } = req.body;
 
         if(!email){
@@ -34,9 +30,6 @@ module.exports.register = async(req, res) => {
         const errors = validationResult(req);
 
         if (!errors.isEmpty()) {
-
-          // console.log(error)
-
           const errorResponse = {};  // creating error object 
 
           errors.array().forEach(error => {
@@ -49,28 +42,19 @@ module.exports.register = async(req, res) => {
   
               errorResponse.password = error.msg;
             } else {
-              // rest of the field - if exist in future
-              // maintainability
             }
            
           });
           return res.status(422).json(errorResponse);
 
         }
-
-        // console.log("1");
-
-        // checking if user is already registered by taking email is Primary-Key //
         const existingUser = await User.findOne({ email });
         if (existingUser) {
           return res.status(400).json({ message: 'User already exists' });
         }
     
-        // Password Hashing using bcrypt technique //
         const hashedPassword = await bcrypt.hash(password, 10);
-    
-        // Creating a new User with the given credentials //
-        // by default - not considering an Admin
+  
         const user = new User({
           email,
           password: hashedPassword,
@@ -92,8 +76,6 @@ module.exports.login = async(req, res) => {
 
     try {
         const { email, password } = req.body;
-    
-        // finding user in database using mongoose findOne() function
         const user = await User.findOne({ email });
     
         if (!user) {
@@ -124,7 +106,6 @@ module.exports.login = async(req, res) => {
 module.exports.logout = async(req, res) => {
 
     try{
-        // console.log("logout-hitting");
         const token = req.cookies.token;
         res.clearCookie('token');
         res.status(200).json({ message: 'User logged out successfully' });
