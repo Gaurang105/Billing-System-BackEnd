@@ -39,8 +39,11 @@ The application is built with Node.js, Express.js, and MongoDB Cloud, providing 
 2. Install dependencies: `npm install`
 ## **Deployment:-**
 
-1. Download the .env file attached in the e-mail and put it inside the root project directory. 
-   Or you can create a .env file in the root directory itself and then paste the mongodb url and jwt key. I'm attaching both in the env text file in the repository.
+1. Download the .env file attached in the e-mail and put it inside the root project directory. Or you can create a `.env` file in the root directory itself and then paste this in the `.env` file:
+```bash
+MY_DB_URL = "mongodb+srv://gujratigaurang:Shanu105@cluster0.1z0q8wj.mongodb.net/?retryWrites=true&w=majority"
+MY_SECRET_KEY = "bcbskjcdkjdnlanslcnksjddbckbcckj"
+```
 
 2. Once that's done, you will just have to start the server and it will connect to the MongoDB Cloud Database.
 
