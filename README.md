@@ -44,6 +44,7 @@ The application is built with Node.js, Express.js, and MongoDB Cloud, providing 
 MY_DB_URL = "mongodb+srv://gujratigaurang:Shanu105@cluster0.1z0q8wj.mongodb.net/?retryWrites=true&w=majority"
 MY_SECRET_KEY = "bcbskjcdkjdnlanslcnksjddbckbcckj"
 ```
+*NOTE: There's a very slim chance of MongoDB cloud not getting connected because of IP access issue. If that happens then just setup the mongodb locally, get the local mongodb url and paste it in the `.env` file.
 
 2. Once that's done, you will just have to start the server and it will connect to the MongoDB Cloud Database.
 
@@ -51,7 +52,7 @@ MY_SECRET_KEY = "bcbskjcdkjdnlanslcnksjddbckbcckj"
 
 4. Access the application at `http://localhost:8001`
 
-NOTE: I've added postman collection in the Postman Collection folder. 
+*NOTE: I've added postman collection in the Postman Collection folder. 
 
 ## **API Endpoints:-**
 
