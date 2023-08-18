@@ -1,0 +1,1684 @@
+{
+	"info": {
+		"_postman_id": "2bd3cb22-e77a-46eb-9b26-acc04d7a93b0",
+		"name": "Systuum Billing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27833904"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"pv2341@srmist.edu.in\",\r\n    \"password\": \"sasdbc\",\r\n    \"isAdmin\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register-1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"name": "cache-control",
+										"sortOrder": 2,
+										"infoTitle": "We recommend using this header",
+										"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+										"allowedToToggle": false,
+										"disableEdit": true,
+										"previewSettingsLink": "Go to settings",
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"system": true,
+										"type": "text"
+									},
+									{
+										"name": "postman-token",
+										"sortOrder": 3,
+										"infoTitle": "We recommend using this header",
+										"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+										"allowedToToggle": false,
+										"disableEdit": true,
+										"previewSettingsLink": "Go to settings",
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"system": true,
+										"type": "text"
+									},
+									{
+										"name": "content-type",
+										"sortOrder": 4,
+										"infoTitle": "This header was automatically added",
+										"info": "The Content-Type header is added to help the server identify the media type of the request body that is present in this request.\n\nUse the request body tab to control the value or to remove this header.",
+										"allowedToToggle": true,
+										"disableEdit": true,
+										"previewSettingsLink": "Go to body",
+										"key": "Content-Type",
+										"value": "application/json",
+										"system": true,
+										"type": "text"
+									},
+									{
+										"name": "content-length",
+										"sortOrder": 5,
+										"infoTitle": "This header was automatically added",
+										"info": "The Content-Length header was added to indicate to the server the size of the request body that is added to this request. Server uses this value to parse the request body accurately.\n\nYou can remove the header or enter a new one with a different value.",
+										"allowedToToggle": true,
+										"disableEdit": true,
+										"previewSettingsLink": "Go to body",
+										"key": "Content-Length",
+										"value": "<calculated when request is sent>",
+										"system": true,
+										"type": "text"
+									},
+									{
+										"name": "host",
+										"sortOrder": 6,
+										"infoTitle": "We recommend using this header",
+										"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+										"allowedToToggle": true,
+										"disableEdit": true,
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"system": true,
+										"type": "text"
+									},
+									{
+										"name": "user-agent",
+										"sortOrder": 7,
+										"infoTitle": "We recommend using this header",
+										"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+										"allowedToToggle": true,
+										"disableEdit": true,
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.32.1",
+										"system": true,
+										"type": "text"
+									},
+									{
+										"name": "accept",
+										"sortOrder": 8,
+										"infoTitle": "We recommend using this header",
+										"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+										"allowedToToggle": true,
+										"disableEdit": true,
+										"key": "Accept",
+										"value": "*/*",
+										"system": true,
+										"type": "text"
+									},
+									{
+										"name": "accept-encoding",
+										"sortOrder": 9,
+										"infoTitle": "We recommend using this header",
+										"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+										"allowedToToggle": true,
+										"disableEdit": true,
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"system": true,
+										"type": "text"
+									},
+									{
+										"name": "connection",
+										"sortOrder": 10,
+										"infoTitle": "We recommend using this header",
+										"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+										"allowedToToggle": true,
+										"disableEdit": true,
+										"key": "Connection",
+										"value": "keep-alive",
+										"system": true,
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"gg1740@srmist.edu.in\",\r\n    \"password\": \"shanu105\",\r\n    \"isAdmin\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/users/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "JSON",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express",
+									"type": "text"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"type": "text"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43",
+									"type": "text"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b-y4YiXnmA6BbxHLXDYraam5R1LTg\"",
+									"type": "text"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 18:36:28 GMT",
+									"type": "text"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"type": "text"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully!\"\n}"
+						},
+						{
+							"name": "register-2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"pv2341@srmist.edu.in\",\r\n    \"password\": \"sasdbc\",\r\n    \"isAdmin\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/users/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b-y4YiXnmA6BbxHLXDYraam5R1LTg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 18:56:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"gg1740@srmist.edu.in\",\r\n    \"password\": \"shanu105\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login-1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"gg1740@srmist.edu.in\",\r\n    \"password\": \"shanu105\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGRlNjhhYzc2YjZhYmQ4NzUwMTY3NjkiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2OTIyOTg3ODJ9.G3HNwSuNNS6rKc6Pn_eUJsSidiD-f23Mvw6vuzvg8g0; Path=/; HttpOnly; Secure"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e-DOWvfMhj05v4eN+mg6AlHJrIPp8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 18:59:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login successful\"\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/users/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"users",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/users/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"users",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-V9rW7eXSi+fbWW1efmHlOS+A738\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:07:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User logged out successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "getCart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/carts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"carts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "empty_cart",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/carts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d-WhRTWMFt6nj2rWKP/eC0Je+3bYk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:09:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cart\": null\n}"
+						},
+						{
+							"name": "totalCart",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/carts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "778"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"30a-lulQt9HjWnuJAGRbr3c70DfxHN8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:40:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cart\": {\n        \"_id\": \"64de75a35efeaa10e4a7bbd4\",\n        \"userId\": \"64de68ac76b6abd875016769\",\n        \"products\": [\n            {\n                \"item\": {\n                    \"_id\": \"64de71541f52fada18e73677\",\n                    \"name\": \"parle-g\",\n                    \"price\": 10,\n                    \"__v\": 0\n                },\n                \"quantity\": 8,\n                \"price\": 10,\n                \"tax\": 1600,\n                \"totalPrice\": 1680,\n                \"_id\": \"64de75a35efeaa10e4a7bbd6\"\n            },\n            {\n                \"item\": {\n                    \"_id\": \"64de71ba1f52fada18e7367b\",\n                    \"name\": \"mobile\",\n                    \"price\": 20000,\n                    \"__v\": 0\n                },\n                \"quantity\": 1,\n                \"price\": 20000,\n                \"tax\": 3600,\n                \"totalPrice\": 23600,\n                \"_id\": \"64de76935efeaa10e4a7bbe5\"\n            }\n        ],\n        \"services\": [\n            {\n                \"item\": {\n                    \"_id\": \"64de727b1f52fada18e7367d\",\n                    \"name\": \"delivery\",\n                    \"price\": 30,\n                    \"__v\": 0\n                },\n                \"quantity\": 1,\n                \"price\": 30,\n                \"tax\": 100,\n                \"totalPrice\": 130,\n                \"_id\": \"64de76315efeaa10e4a7bbdf\"\n            },\n            {\n                \"item\": {\n                    \"_id\": \"64de72c71f52fada18e7367f\",\n                    \"name\": \"OTT\",\n                    \"price\": 800,\n                    \"__v\": 0\n                },\n                \"quantity\": 1,\n                \"price\": 800,\n                \"tax\": 100,\n                \"totalPrice\": 900,\n                \"_id\": \"64de77205efeaa10e4a7bbec\"\n            }\n        ],\n        \"__v\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "addToCart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"quantity\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/carts/service/64de72c71f52fada18e7367f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"carts",
+								"service",
+								"64de72c71f52fada18e7367f"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Addproduct-1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"quantity\": 8\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/carts/product/64de71541f52fada18e73677",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts",
+										"product",
+										"64de71541f52fada18e73677"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "271"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10f-RtsltgEMviy0SVYfXCzguffp8ag\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:32:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Item added to the cart\",\n    \"cart\": {\n        \"_id\": \"64de75a35efeaa10e4a7bbd4\",\n        \"userId\": \"64de68ac76b6abd875016769\",\n        \"products\": [\n            {\n                \"item\": \"64de71541f52fada18e73677\",\n                \"quantity\": 8,\n                \"price\": 10,\n                \"tax\": 1600,\n                \"totalPrice\": 1680,\n                \"_id\": \"64de75a35efeaa10e4a7bbd6\"\n            }\n        ],\n        \"services\": [],\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "Addservice-1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"quantity\": 1\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/carts/service/64de727b1f52fada18e7367d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts",
+										"service",
+										"64de727b1f52fada18e7367d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "390"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"186-69KYNtH3hu4VLm3BJxZfQzrqdSU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:34:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Item added to the cart\",\n    \"cart\": {\n        \"_id\": \"64de75a35efeaa10e4a7bbd4\",\n        \"userId\": \"64de68ac76b6abd875016769\",\n        \"products\": [\n            {\n                \"item\": \"64de71541f52fada18e73677\",\n                \"quantity\": 8,\n                \"price\": 10,\n                \"tax\": 1600,\n                \"totalPrice\": 1680,\n                \"_id\": \"64de75a35efeaa10e4a7bbd6\"\n            }\n        ],\n        \"services\": [\n            {\n                \"item\": \"64de727b1f52fada18e7367d\",\n                \"quantity\": 1,\n                \"price\": 30,\n                \"tax\": 100,\n                \"totalPrice\": 130,\n                \"_id\": \"64de76315efeaa10e4a7bbdf\"\n            }\n        ],\n        \"__v\": 1\n    }\n}"
+						},
+						{
+							"name": "Addproduct-2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"quantity\": 1\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/carts/product/64de71ba1f52fada18e7367b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts",
+										"product",
+										"64de71ba1f52fada18e7367b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "516"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"204-pCw+qI8M1+5iblPfgYvVZG8I9hc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:35:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Item added to the cart\",\n    \"cart\": {\n        \"_id\": \"64de75a35efeaa10e4a7bbd4\",\n        \"userId\": \"64de68ac76b6abd875016769\",\n        \"products\": [\n            {\n                \"item\": \"64de71541f52fada18e73677\",\n                \"quantity\": 8,\n                \"price\": 10,\n                \"tax\": 1600,\n                \"totalPrice\": 1680,\n                \"_id\": \"64de75a35efeaa10e4a7bbd6\"\n            },\n            {\n                \"item\": \"64de71ba1f52fada18e7367b\",\n                \"quantity\": 1,\n                \"price\": 20000,\n                \"tax\": 3600,\n                \"totalPrice\": 23600,\n                \"_id\": \"64de76935efeaa10e4a7bbe5\"\n            }\n        ],\n        \"services\": [\n            {\n                \"item\": \"64de727b1f52fada18e7367d\",\n                \"quantity\": 1,\n                \"price\": 30,\n                \"tax\": 100,\n                \"totalPrice\": 130,\n                \"_id\": \"64de76315efeaa10e4a7bbdf\"\n            }\n        ],\n        \"__v\": 2\n    }\n}"
+						},
+						{
+							"name": "Addservice-2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"quantity\": 1\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/carts/service/64de72c71f52fada18e7367f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts",
+										"service",
+										"64de72c71f52fada18e7367f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "637"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"27d-RYj78c9XDRZP8SE8asJ4vK1unG8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:38:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Item added to the cart\",\n    \"cart\": {\n        \"_id\": \"64de75a35efeaa10e4a7bbd4\",\n        \"userId\": \"64de68ac76b6abd875016769\",\n        \"products\": [\n            {\n                \"item\": \"64de71541f52fada18e73677\",\n                \"quantity\": 8,\n                \"price\": 10,\n                \"tax\": 1600,\n                \"totalPrice\": 1680,\n                \"_id\": \"64de75a35efeaa10e4a7bbd6\"\n            },\n            {\n                \"item\": \"64de71ba1f52fada18e7367b\",\n                \"quantity\": 1,\n                \"price\": 20000,\n                \"tax\": 3600,\n                \"totalPrice\": 23600,\n                \"_id\": \"64de76935efeaa10e4a7bbe5\"\n            }\n        ],\n        \"services\": [\n            {\n                \"item\": \"64de727b1f52fada18e7367d\",\n                \"quantity\": 1,\n                \"price\": 30,\n                \"tax\": 100,\n                \"totalPrice\": 130,\n                \"_id\": \"64de76315efeaa10e4a7bbdf\"\n            },\n            {\n                \"item\": \"64de72c71f52fada18e7367f\",\n                \"quantity\": 1,\n                \"price\": 800,\n                \"tax\": 100,\n                \"totalPrice\": 900,\n                \"_id\": \"64de77205efeaa10e4a7bbec\"\n            }\n        ],\n        \"__v\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteCart",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/carts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"carts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteService",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/carts/service/64de72c71f52fada18e7367f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts",
+										"service",
+										"64de72c71f52fada18e7367f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "520"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"208-4dBFwIGBED6yEdUwbAbnGAM77G8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:42:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Item removed from the cart\",\n    \"cart\": {\n        \"_id\": \"64de75a35efeaa10e4a7bbd4\",\n        \"userId\": \"64de68ac76b6abd875016769\",\n        \"products\": [\n            {\n                \"item\": \"64de71541f52fada18e73677\",\n                \"quantity\": 8,\n                \"price\": 10,\n                \"tax\": 1600,\n                \"totalPrice\": 1680,\n                \"_id\": \"64de75a35efeaa10e4a7bbd6\"\n            },\n            {\n                \"item\": \"64de71ba1f52fada18e7367b\",\n                \"quantity\": 1,\n                \"price\": 20000,\n                \"tax\": 3600,\n                \"totalPrice\": 23600,\n                \"_id\": \"64de76935efeaa10e4a7bbe5\"\n            }\n        ],\n        \"services\": [\n            {\n                \"item\": \"64de727b1f52fada18e7367d\",\n                \"quantity\": 1,\n                \"price\": 30,\n                \"tax\": 100,\n                \"totalPrice\": 130,\n                \"_id\": \"64de76315efeaa10e4a7bbdf\"\n            }\n        ],\n        \"__v\": 4\n    }\n}"
+						},
+						{
+							"name": "deleteProduct",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/carts/product/64de71ba1f52fada18e7367b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts",
+										"product",
+										"64de71ba1f52fada18e7367b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "394"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18a-ucGRq0NThYk7a26jEzPFVlLl+tg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:42:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Item removed from the cart\",\n    \"cart\": {\n        \"_id\": \"64de75a35efeaa10e4a7bbd4\",\n        \"userId\": \"64de68ac76b6abd875016769\",\n        \"products\": [\n            {\n                \"item\": \"64de71541f52fada18e73677\",\n                \"quantity\": 8,\n                \"price\": 10,\n                \"tax\": 1600,\n                \"totalPrice\": 1680,\n                \"_id\": \"64de75a35efeaa10e4a7bbd6\"\n            }\n        ],\n        \"services\": [\n            {\n                \"item\": \"64de727b1f52fada18e7367d\",\n                \"quantity\": 1,\n                \"price\": 30,\n                \"tax\": 100,\n                \"totalPrice\": 130,\n                \"_id\": \"64de76315efeaa10e4a7bbdf\"\n            }\n        ],\n        \"__v\": 5\n    }\n}"
+						},
+						{
+							"name": "ClearCart",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/carts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "39"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"27-oEY1AezaNQbp8qUQ1twiVUiP76A\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:49:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Cart cleared successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Checkout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/carts/checkout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"carts",
+								"checkout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cartCheckout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/carts/checkout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts",
+										"checkout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "410"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19a-AoGJZjaESDmYYzvH6CtV0XUEdv4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:44:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Checkout successful\",\n    \"totalBill\": {\n        \"userId\": \"64de68ac76b6abd875016769\",\n        \"products\": [\n            {\n                \"item\": \"64de71541f52fada18e73677\",\n                \"quantity\": 8,\n                \"price\": 10,\n                \"tax\": 1600,\n                \"totalPrice\": 1680,\n                \"_id\": \"64de78915efeaa10e4a7bc0d\"\n            }\n        ],\n        \"services\": [\n            {\n                \"item\": \"64de727b1f52fada18e7367d\",\n                \"quantity\": 1,\n                \"price\": 30,\n                \"tax\": 100,\n                \"totalPrice\": 130,\n                \"_id\": \"64de78915efeaa10e4a7bc0e\"\n            }\n        ],\n        \"totalValue\": 1810,\n        \"_id\": \"64de78915efeaa10e4a7bc0c\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "ConfirmOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/carts/confirmOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"carts",
+								"confirmOrder"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "confirmOrder",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/carts/confirmOrder",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"carts",
+										"confirmOrder"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "415"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19f-VyYVATdwDwFhqWMfRsrN+mgzyWE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:45:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Order confirmed successfully\",\n    \"order\": {\n        \"userId\": \"64de68ac76b6abd875016769\",\n        \"products\": [\n            {\n                \"item\": \"64de71541f52fada18e73677\",\n                \"quantity\": 8,\n                \"price\": 10,\n                \"tax\": 1600,\n                \"totalPrice\": 1680,\n                \"_id\": \"64de78915efeaa10e4a7bc0d\"\n            }\n        ],\n        \"services\": [\n            {\n                \"item\": \"64de727b1f52fada18e7367d\",\n                \"quantity\": 1,\n                \"price\": 30,\n                \"tax\": 100,\n                \"totalPrice\": 130,\n                \"_id\": \"64de78915efeaa10e4a7bc0e\"\n            }\n        ],\n        \"totalPrice\": 1810,\n        \"_id\": \"64de78cd5efeaa10e4a7bc13\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"mobile\",\r\n    \"price\": 20000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/products/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"products",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "product-1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"parle-g\",\r\n    \"price\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/products/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"products",
+										"add"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-rr2QYy1029cNC/Nxfvq5n3v7hmg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:13:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product added successfully\"\n}"
+						},
+						{
+							"name": "product-2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"shampoo\",\r\n    \"price\": 300\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/products/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"products",
+										"add"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-rr2QYy1029cNC/Nxfvq5n3v7hmg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:14:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product added successfully\"\n}"
+						},
+						{
+							"name": "product-3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"mobile\",\r\n    \"price\": 20000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/products/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"products",
+										"add"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-rr2QYy1029cNC/Nxfvq5n3v7hmg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:15:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product added successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Services",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"OTT\",\r\n    \"price\": 800\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/services/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"services",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "service-1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"delivery\",\r\n    \"price\": 30\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/services/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"services",
+										"add"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-BSaGd1OmiRTlXQQqQKmrGL5oKl4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:18:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Service added successfully\"\n}"
+						},
+						{
+							"name": "service-2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"OTT\",\r\n    \"price\": 800\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8001/services/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"services",
+										"add"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-BSaGd1OmiRTlXQQqQKmrGL5oKl4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:19:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Service added successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "FetchOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "order-1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8001/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "466"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d2-CrEuHFnKqNojGjckchwlUoa6LaE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 19:47:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"orders\": [\n        {\n            \"_id\": \"64de78cd5efeaa10e4a7bc13\",\n            \"userId\": \"64de68ac76b6abd875016769\",\n            \"products\": [\n                {\n                    \"item\": {\n                        \"_id\": \"64de71541f52fada18e73677\",\n                        \"name\": \"parle-g\",\n                        \"price\": 10,\n                        \"__v\": 0\n                    },\n                    \"quantity\": 8,\n                    \"price\": 10,\n                    \"tax\": 1600,\n                    \"totalPrice\": 1680,\n                    \"_id\": \"64de78915efeaa10e4a7bc0d\"\n                }\n            ],\n            \"services\": [\n                {\n                    \"item\": {\n                        \"_id\": \"64de727b1f52fada18e7367d\",\n                        \"name\": \"delivery\",\n                        \"price\": 30,\n                        \"__v\": 0\n                    },\n                    \"quantity\": 1,\n                    \"price\": 30,\n                    \"tax\": 100,\n                    \"totalPrice\": 130,\n                    \"_id\": \"64de78915efeaa10e4a7bc0e\"\n                }\n            ],\n            \"totalPrice\": 1810,\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
