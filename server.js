@@ -37,6 +37,22 @@ app.use(express.json());
 app.use(cookieParser());
 
 
+// routes //
+app.use('/', itemsRoutes);
+app.use('/users', usersRoutes);
+app.use('/products', productRoutes);
+app.use('/services', serviceRoutes);
+app.use('/carts', cartRoutes);
+app.use('/orders', orderRoutes);
+
+
+app.all("*", (req, res) => {
+    return res.status(400).json({
+        message: "Hitting Wrong End-Point"
+    })
+});
+
+
 // server listening at port 8001 //
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
