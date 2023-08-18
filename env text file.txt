@@ -1,2 +1,0 @@
-MY_DB_URL = "mongodb+srv://gujratigaurang:Shanu105@cluster0.1z0q8wj.mongodb.net/?retryWrites=true&w=majority"
-MY_SECRET_KEY = "bcbskjcdkjdnlanslcnksjddbckbcckj"
