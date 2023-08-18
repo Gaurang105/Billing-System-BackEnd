@@ -47,6 +47,9 @@ The application is built with Node.js, Express.js, and MongoDB Cloud, providing 
 3. Now start the server: `npm start`
 
 4. Access the application at `http://localhost:8001`
+
+NOTE: I've added postman collection in the Postman Collection folder. 
+
 ## **API Endpoints:-**
 
 ### **1. General:**
