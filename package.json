@@ -1,0 +1,26 @@
+{
+  "name": "backend-development-plotline",
+  "version": "1.0.0",
+  "description": "Task Completion for an internship at Plotline",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Gaurang Gujrati",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.3.4",
+    "nodemon": "^3.0.1",
+    "npm": "^9.8.0"
+  }
+}
