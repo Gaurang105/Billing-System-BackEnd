@@ -10,7 +10,14 @@ Administrators are catered to as well; a specialized API has been integrated to 
 
 On the technical side, this robust server is developed on the Node.js platform, employs the Express.js framework, and utilizes the MongoDB Cloud for database operations. 
 
+## Table of Contents
 
+- [Features](#features)
+- [Installation](#installation)
+- [Deployment](#deployment)
+- [API Endpoints](#api-endpoints)
+- [Technologies Used](#technologies-used)
+- [Future Updates](#future-updates)
 
 ## **Features:-**
 
