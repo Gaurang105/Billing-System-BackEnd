@@ -12,12 +12,12 @@ On the technical side, this robust server is developed on the Node.js platform, 
 
 ## Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Deployment](#deployment)
-- [API Endpoints](#api-endpoints)
-- [Technologies Used](#technologies-used)
-- [Future Updates](#future-updates)
+- [Features](#Features)
+- [Installation](#Installation)
+- [Deployment](#Deployment)
+- [API Endpoints](#Api-Endpoints)
+- [Technologies Used](#Technologies-Used)
+- [Future Updates](#Future-Updates)
 
 ## **Features:-**
 
