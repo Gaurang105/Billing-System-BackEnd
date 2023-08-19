@@ -130,6 +130,4 @@ MY_SECRET_KEY = "bcbskjcdkjdnlanslcnksjddbckbcckj"
 ### **2. Comprehensive User Experience**
 - **Order History**: For better transparency and to help users track their expenditure, we're introducing an 'Order History' feature, letting users access a detailed record of all their past transactions.
 
-- **User Reviews and Ratings**: Recognizing the power of community-driven feedback, we're gearing up to launch a system where customers can share their reviews and ratings on products and services. This enriches the buying experience for others and provides valuable insights.
-
 - **User Profile Management**: Putting users in control of their personal data, we're enhancing our platform to allow easy and secure modifications to user profiles.
