@@ -51,12 +51,11 @@ On the technical side, this robust server is developed on the Node.js platform, 
 2. Install dependencies: `npm install`
 ## **Deployment:-**
 
-1. Create a `.env` file in the root directory itself and then paste this in the `.env` file:
+1. Create a `.env` file in the root directory itself and then create this in the `.env` file:
 ```bash
-MY_DB_URL = "mongodb+srv://gujratigaurang:Shanu105@cluster0.1z0q8wj.mongodb.net/?retryWrites=true&w=majority"
-MY_SECRET_KEY = "bcbskjcdkjdnlanslcnksjddbckbcckj"
+MY_DB_URL = "YOUR_DB_URL"
+MY_SECRET_KEY = "YOUR_SECRET_KEY"
 ```
-*NOTE: There's a very slim chance of MongoDB cloud not getting connected because of IP access issue. If that happens then just setup the mongodb locally, get the local mongodb url and paste it in the `.env` file.
 
 2. Once that's done, you will just have to start the server and it will connect to the MongoDB Cloud Database.
 
